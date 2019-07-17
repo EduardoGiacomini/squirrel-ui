@@ -1,0 +1,8 @@
+# modules files
+node_modules
+package-lock.json
+
+# build files
+/styles/style.comp.css
+/styles/style.prefix.css
+/styles/style.min.css

@@ -1,0 +1,40 @@
+{
+  "name": "squirrel-ui",
+  "version": "1.0.0",
+  "description": "A biblioteca CSS que mais se assemelha a um esquilo",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss styles/style.css -w",
+    "devserver": "live-server",
+    "compile:sass": "node-sass sass/main.scss styles/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' styles/style.comp.css -o styles/style.prefix.css",
+    "compress:css": "node-sass styles/style.prefix.css styles/style.min.css --output-style compressed",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "build": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "keywords": [
+    "CSS lib",
+    "CSS framework",
+    "UI components",
+    "UI elements",
+    "Design",
+    "Clean design"
+  ],
+  "author": "Eduardo Giacomini <carloseduardo.diasgiacomini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EduardoGiacomini/squirrel-ui/issues",
+    "email": "carloseduardo.diasgiacomini@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EduardoGiacomini/squirrel-ui/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
+  }
+}
