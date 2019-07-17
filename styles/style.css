@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+:root {
+  --color-primary: #72A065;
+  --color-secondary: #8C88CE;
+  --color-grey-light: #F6F6F4;
+  --color-grey: #D8DDE0;
+  --color-grey-dark: #4A4F5D;
+  --color-white: #F8F8F8;
+  --color-black: #121418;
+  --shadow-light: 0 .5rem 2rem rgba(0, 0, 0, .3);
+  --shadow-dark: 0 1rem 2rem rgba(0, 0, 0, .3);
+  --border-radius: 8px; }
+
 *,
 *::after,
 *::before {
@@ -15,11 +27,13 @@ body {
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.7;
+  color: var(--color-grey-dark); }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: var(--color-black); }
 
 h1 {
   font-size: 4rem;
@@ -53,7 +67,8 @@ h6 {
 
 p {
   font-size: 1.6rem;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  color: var(--color-black); }
 
 .bold {
   font-weight: 700 !important; }
@@ -63,3 +78,38 @@ p {
 
 .light {
   font-weight: 300 !important; }
+
+.bg-primary {
+  background-color: var(--color-primary) !important; }
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important; }
+
+.round {
+  border-radius: 5rem !important; }
+
+.full-width {
+  width: 100% !important; }
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  box-shadow: var(--shadow-light);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: var(--border-radius);
+  border: none;
+  transition: all .2s;
+  cursor: pointer; }
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    box-shadow: var(--shadow-dark); }

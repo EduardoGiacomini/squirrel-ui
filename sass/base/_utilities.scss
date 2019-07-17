@@ -1,3 +1,12 @@
+// Fonts
 .bold { font-weight: 700 !important; }
 .regular { font-weight: 400 !important; }
 .light { font-weight: 300 !important; }
+
+// Backgrounds
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
+
+// Abstracts
+ .round { border-radius: 5rem !important; }
+ .full-width { width: 100% !important; }
