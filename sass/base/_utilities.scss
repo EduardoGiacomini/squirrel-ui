@@ -3,10 +3,24 @@
 .regular { font-weight: 400 !important; }
 .light { font-weight: 300 !important; }
 
+// Paddings
+.pa-1 { padding: 1rem !important; }
+.pa-2 { padding: 2rem !important; }
+.pa-3 { padding: 3rem !important; }
+.pa-4 { padding: 4rem !important; }
+
+// Margins
+.ma-1 { margin: 1rem !important; }
+.ma-2 { margin: 2rem !important; }
+.ma-3 { margin: 3rem !important; }
+.ma-4 { margin: 4rem !important; }
+
 // Backgrounds
 .bg-primary { background-color: var(--color-primary) !important; }
 .bg-secondary { background-color: var(--color-secondary) !important; }
 
 // Abstracts
  .round { border-radius: 5rem !important; }
- .full-width { width: 100% !important; }
+ .full-width { width: 100% !important; box-sizing: border-box !important; }
+ .center-text { text-align: center !important; }
+ 

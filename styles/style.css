@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap");
 :root {
   --color-primary: #72A065;
   --color-secondary: #8C88CE;
@@ -7,8 +7,8 @@
   --color-grey-dark: #4A4F5D;
   --color-white: #F8F8F8;
   --color-black: #121418;
-  --shadow-light: 0 .5rem 2rem rgba(0, 0, 0, .3);
-  --shadow-dark: 0 1rem 2rem rgba(0, 0, 0, .3);
+  --shadow-light:  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --shadow-dark: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   --border-radius: 8px; }
 
 *,
@@ -16,7 +16,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit !important; }
 
 html {
   font-size: 62.5%; }
@@ -25,7 +25,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-grey-dark); }
@@ -79,6 +79,30 @@ p {
 .light {
   font-weight: 300 !important; }
 
+.pa-1 {
+  padding: 1rem !important; }
+
+.pa-2 {
+  padding: 2rem !important; }
+
+.pa-3 {
+  padding: 3rem !important; }
+
+.pa-4 {
+  padding: 4rem !important; }
+
+.ma-1 {
+  margin: 1rem !important; }
+
+.ma-2 {
+  margin: 2rem !important; }
+
+.ma-3 {
+  margin: 3rem !important; }
+
+.ma-4 {
+  margin: 4rem !important; }
+
 .bg-primary {
   background-color: var(--color-primary) !important; }
 
@@ -89,7 +113,26 @@ p {
   border-radius: 5rem !important; }
 
 .full-width {
-  width: 100% !important; }
+  width: 100% !important;
+  box-sizing: border-box !important; }
+
+.center-text {
+  text-align: center !important; }
+
+.avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  box-shadow: var(--shadow-light);
+  transition: all .2s; }
+  .avatar:hover {
+    box-shadow: var(--shadow-dark); }
+  .avatar--small {
+    width: 5rem;
+    height: 5rem; }
+  .avatar--big {
+    width: 10rem;
+    height: 10rem; }
 
 .button,
 button,
@@ -101,6 +144,7 @@ input[type="button"] {
   box-shadow: var(--shadow-light);
   background-color: var(--color-primary);
   color: var(--color-white);
+  text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
   border-radius: var(--border-radius);
@@ -112,4 +156,67 @@ input[type="button"] {
   input[type="submit"]:hover,
   input[type="reset"]:hover,
   input[type="button"]:hover {
+    box-shadow: var(--shadow-dark);
+    transform: translateY(-3px); }
+  .button:active,
+  button:active,
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active {
+    transform: translateY(-1px); }
+
+code {
+  padding: 1rem 1.5rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  background: var(--color-grey-light);
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius); }
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+.text-field,
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  display: block;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-light);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--color-grey-dark);
+  background-color: var(--color-grey-light); }
+  .text-field:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
     box-shadow: var(--shadow-dark); }
+  .text-field::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="number"]::-webkit-input-placeholder,
+  input[type="search"]::-webkit-input-placeholder,
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder,
+  input[type="url"]::-webkit-input-placeholder,
+  input[type="password"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  select::-webkit-input-placeholder {
+    color: var(--color-grey-dark); }
