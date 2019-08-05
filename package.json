@@ -4,6 +4,7 @@
   "description": "A biblioteca CSS que mais se assemelha a um esquilo",
   "main": "index.js",
   "scripts": {
+    "commit": "npx git-cz",
     "watch:sass": "node-sass sass/main.scss styles/style.css -w",
     "devserver": "live-server",
     "compile:sass": "node-sass sass/main.scss styles/style.comp.css",
