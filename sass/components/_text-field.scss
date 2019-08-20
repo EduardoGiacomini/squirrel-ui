@@ -13,17 +13,19 @@ select {
     font-size: 1.4rem;
     font-weight: 700;
     padding: 1.5rem;
+    margin: 1rem 0;
     box-shadow: var(--shadow-light);
     border: none;
     border-radius: var(--border-radius);
-    color: var(--color-grey-dark);
-    background-color: var(--color-grey-light);
+    color: var(--color-gray-dark);
+    background-color: var(--color-gray-light);
+    box-sizing: border-box !important;
     
     &:focus {
         box-shadow: var(--shadow-dark);
     }
 
     &::-webkit-input-placeholder {
-        color: var(--color-grey-dark);
+        color: var(--color-gray-dark);
     }
 }

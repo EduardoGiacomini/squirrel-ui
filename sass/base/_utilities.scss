@@ -20,7 +20,8 @@
 .bg-secondary { background-color: var(--color-secondary) !important; }
 
 // Abstracts
- .round { border-radius: 5rem !important; }
- .full-width { width: 100% !important; box-sizing: border-box !important; }
- .center-text { text-align: center !important; }
- 
+.round { border-radius: 5rem !important; }
+.full-width { width: 100% !important; box-sizing: border-box !important; }
+.center-text { text-align: center !important; }
+.center-block { margin: 0 auto !important; display: block !important; }
+.upper-case { text-transform: uppercase !important; }

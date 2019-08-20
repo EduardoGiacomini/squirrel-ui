@@ -2,9 +2,9 @@
 :root {
   --color-primary: #72A065;
   --color-secondary: #8C88CE;
-  --color-grey-light: #FAFAFA;
-  --color-grey: #D8DDE0;
-  --color-grey-dark: #4A4F5D;
+  --color-gray-light: #FAFAFA;
+  --color-gray: #D8DDE0;
+  --color-gray-dark: #4A4F5D;
   --color-white: #F8F8F8;
   --color-black: #121418;
   --shadow-light:  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -28,7 +28,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--color-grey-dark);
+  color: var(--color-gray-dark);
   -webkit-font-smoothing: antialiased !important; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,6 +120,13 @@ p {
 .center-text {
   text-align: center !important; }
 
+.center-block {
+  margin: 0 auto !important;
+  display: block !important; }
+
+.upper-case {
+  text-transform: uppercase !important; }
+
 .avatar {
   width: 5.5rem;
   height: 5.5rem;
@@ -169,11 +176,15 @@ input[type="button"] {
 
 code {
   padding: 1rem 1.5rem;
+  margin: 2rem 0;
   font-size: 1.4rem;
   white-space: nowrap;
-  background: var(--color-grey-light);
-  border: 1px solid var(--color-grey);
-  border-radius: var(--border-radius); }
+  color: var(--color-gray-light);
+  font-weight: 700;
+  background: var(--color-gray-dark);
+  border: 1px solid var(--color-gray-dark);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light); }
 
 pre > code {
   display: block;
@@ -195,11 +206,13 @@ select {
   font-size: 1.4rem;
   font-weight: 700;
   padding: 1.5rem;
+  margin: 1rem 0;
   box-shadow: var(--shadow-light);
   border: none;
   border-radius: var(--border-radius);
-  color: var(--color-grey-dark);
-  background-color: var(--color-grey-light); }
+  color: var(--color-gray-dark);
+  background-color: var(--color-gray-light);
+  box-sizing: border-box !important; }
   .text-field:focus,
   input[type="email"]:focus,
   input[type="number"]:focus,
@@ -221,4 +234,4 @@ select {
   input[type="password"]::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder,
   select::-webkit-input-placeholder {
-    color: var(--color-grey-dark); }
+    color: var(--color-gray-dark); }
