@@ -9,9 +9,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: 300;
-    color: var(--color-black);
+    color: var(--color-grey-dark);
 }
 
 h1 {
@@ -33,19 +33,19 @@ h3 {
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     line-height: 1.35;
     letter-spacing: -.08rem;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 1.4;
     letter-spacing: -.07rem;
 }
 
 h6 {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     line-height: 1.65;
     letter-spacing: -.07rem;
 }
@@ -53,5 +53,4 @@ h6 {
 p {
     font-size: 1.6rem;
     margin: 1rem 0;
-    color: var(--color-black);
 }
