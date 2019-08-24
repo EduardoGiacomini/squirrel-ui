@@ -23,7 +23,7 @@ select {
     transition: all .2s;
     
     &:focus {
-        box-shadow: var(--shadow-dark);
+        box-shadow: var(--shadow-medium);
     }
 
     &::-webkit-input-placeholder {

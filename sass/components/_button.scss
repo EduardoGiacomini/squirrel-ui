@@ -5,7 +5,7 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     padding: 1rem 2rem;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--shadow-medium);
     background-color: var(--color-primary);
     color: var(--color-white);
     text-transform: uppercase;
@@ -25,7 +25,7 @@ input[type="button"] {
     }
 
     &:active {
-        box-shadow: var(--shadow-light);
+        box-shadow: var(--shadow-medium);
         transform: translateY(-1px);
     }
 }
