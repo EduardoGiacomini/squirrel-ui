@@ -16,10 +16,11 @@ select {
     margin: 1rem 0;
     box-shadow: var(--shadow-light);
     border: none;
+    outline: none;
     border-radius: var(--border-radius);
     color: var(--color-gray-dark);
     background-color: var(--color-gray-light);
-    box-sizing: border-box !important;
+    transition: all .2s;
     
     &:focus {
         box-shadow: var(--shadow-dark);

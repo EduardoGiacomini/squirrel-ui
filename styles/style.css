@@ -205,6 +205,7 @@ input[type="button"] {
   font-weight: 700;
   border-radius: var(--border-radius);
   border: none;
+  outline: none;
   transition: all .2s;
   cursor: pointer; }
   .button:hover,
@@ -219,6 +220,7 @@ input[type="button"] {
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active {
+    box-shadow: var(--shadow-light);
     transform: translateY(-1px); }
 
 code {
@@ -255,10 +257,11 @@ select {
   margin: 1rem 0;
   box-shadow: var(--shadow-light);
   border: none;
+  outline: none;
   border-radius: var(--border-radius);
   color: var(--color-gray-dark);
   background-color: var(--color-gray-light);
-  box-sizing: border-box !important; }
+  transition: all .2s; }
   .text-field:focus,
   input[type="email"]:focus,
   input[type="number"]:focus,
