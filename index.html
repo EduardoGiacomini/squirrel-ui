@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,102 @@
     <title>Squirrel UI</title>
     <!-- Squirrel-UI CSS link -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Awesome Icons -->
+    <link href="font-awesome/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="bold center-text">Squirrel UI</h1>
-    <section>
-        <h2 class="bold">Typography</h2>
-        <h1>Heading</h1>
-        <h2>Heading</h2>
-        <h3>Heading</h3>
-        <h4>Heading</h4>
-        <h5>Heading</h5>
-        <h6>Heading</h6>
+    <h1 class="center-text bold ma-4">Squirrel UI</h1>
+    <h5 class="center-text light">Ágil, pequeno, leve e arisco. Squirrel-UI é a biblioteca CSS que mais se assemelha com um
+        esquilo.</h5>
+    <button class="center-block">Download</button>
+    <section class="pa-2">
+        <h2 class="regular">Typography</h2>
+        <section class="pa-1">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam ullam
+                sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus id
+                culpa error.</p>
+            <div>
+                <pre><code>
+&lt;h1>Heading&lt;/h1>
+&lt;h2>Heading&lt;/h2>
+&lt;h3>Heading&lt;/h3>
+&lt;h4>Heading&lt;/h4>
+&lt;h5>Heading&lt;/h5>
+&lt;h6>Heading&lt;/h6>
+&lt;p>Lorem ipsum dolor sit...&lt;/p>
+                </code></pre>
+            </div>
+        </section>
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam ullam sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus id culpa error.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam ullam sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus id culpa error.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam ullam sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus id culpa error.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam ullam sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus id culpa error.</p>
-    <button>Hello World</button>
-    <button class="round">Hello World</button>
-    <button class="bg-secondary">Hello World</button>
-    <button class="bg-secondary round">Hello World</button>
-    <img src="https://api.adorable.io/avatars/100/abott@adorable.png" alt="Avatar" class="avatar avatar--big" />
-    <img src="https://api.adorable.io/avatars/75/abott@adorable.png" alt="Avatar" class="avatar" />
-    <img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Avatar" class="avatar avatar--small" />
-    <p>hello</p>
-    <input class="text-field round" type="text" placeholder="Digite seu nome" />
-    <input class="text-field full-width" type="text" placeholder="Digite seu nome" />
-    <p>hello</p>
-    <pre><code>.btn {
-        background-color: blue;
-    }</code></pre>
+    <section class="pa-2">
+        <h2 class="regular">Buttons</h2>
+        <section class="pa-1">
+            <button class="mr-1">Primary</button>
+            <button class="round mr-1">Primary</button>
+            <button class="bg-secondary mr-1">Secondary</button>
+            <button class="bg-secondary round mr-1">Secondary</button>
+            <div class="mt-2">
+                <pre><code>
+&lt;button>Primary&lt;/button>
+&lt;button class="round">Primary&lt;/button>
+&lt;button class="bg-secondary">Secondary&lt;/button>
+&lt;button class="bg-secondary round">Secondary&lt;/button>
+                </code></pre>
+            </div>
+        </section>
+    </section>
+    <section class="pa-2">
+        <h2 class="regular">Inputs</h2>
+        <section class="pa-1">
+            <p class="bold">Alguma coisa</p>
+            <input class="text-field round" type="text" placeholder="Diga algo sobre você" />
+            <input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
+            <select>
+                <option value="default">-- Qual sua cor favorita? --</option>
+                <option value="yellow">Amarelo</option>
+                <option value="blue">Azul</option>
+                <option value="red">Vermelho</option>
+                <option value="other">Outra</option>
+            </select>
+            <textarea class="full-width" placeholder="Diga o que lhe faz sorrir …"></textarea>
+            <div class="mt-2">
+                <pre><code>
+&lt;input class="text-field round" type="text" placeholder="Diga algo sobre você" />
+&lt;input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
+&lt;select>
+    &lt;option value="default">-- Qual sua cor favorita? --&lt;/option>
+    &lt;option value="yellow">Amarelo&lt;/option>
+    &lt;option value="blue">Azul&lt;/option>
+    &lt;option value="red">Vermelho&lt;/option>
+    &lt;option value="other">Outra&lt;/option>
+&lt;/select>
+&lt;textarea class="full-width" placeholder="Hi Dave …">&lt;/textarea>
+                    </code></pre>
+            </div>
+        </section>
+    </section>
+    <section class="pa-2">
+        <h2 class="regular">Avatar</h2>
+        <section class="pa-1">
+            <img src="https://api.adorable.io/avatars/100/abott@adorable.png" alt="Avatar" class="avatar avatar--big mr-1" />
+            <img src="https://api.adorable.io/avatars/75/abott@adorable.png" alt="Avatar" class="avatar mr-1" />
+            <img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Avatar" class="avatar avatar--small" />
+        </section>
+        <div class="mt-2">
+            <pre><code>
+&lt;img src="https://api.adorable.io/avatars/100/abott@adorable.png" alt="Avatar" class="avatar avatar--big" />
+&lt;img src="https://api.adorable.io/avatars/75/abott@adorable.png" alt="Avatar" class="avatar" />
+&lt;img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Avatar" class="avatar avatar--small" />
+                        </code></pre>
+        </div>
+    </section>
 </body>
+
 </html>
