@@ -28,4 +28,16 @@ input[type="button"] {
         box-shadow: var(--shadow-medium);
         transform: translateY(-1px);
     }
+
+    &:disabled {
+        box-shadow: var(--shadow-light);
+        background-color: var(--color-gray);
+        color: var(--color-gray-dark);
+        cursor: not-allowed;
+
+        &:hover {
+            box-shadow: var(--shadow-light);
+            transform: translateY(0);
+        }
+    }
 }

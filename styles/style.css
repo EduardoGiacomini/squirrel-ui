@@ -12,6 +12,12 @@
   --shadow-dark: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   --border-radius: 6px; }
 
+@keyframes loading {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 *,
 *::after,
 *::before {
@@ -271,6 +277,22 @@ input[type="button"] {
   input[type="button"]:active {
     box-shadow: var(--shadow-medium);
     transform: translateY(-1px); }
+  .button:disabled,
+  button:disabled,
+  input[type="submit"]:disabled,
+  input[type="reset"]:disabled,
+  input[type="button"]:disabled {
+    box-shadow: var(--shadow-light);
+    background-color: var(--color-gray);
+    color: var(--color-gray-dark);
+    cursor: not-allowed; }
+    .button:disabled:hover,
+    button:disabled:hover,
+    input[type="submit"]:disabled:hover,
+    input[type="reset"]:disabled:hover,
+    input[type="button"]:disabled:hover {
+      box-shadow: var(--shadow-light);
+      transform: translateY(0); }
 
 code {
   padding: 1rem 1.5rem;
@@ -287,6 +309,24 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre; }
+
+.loading {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  border: 0.5rem solid var(--color-gray);
+  border-top: 0.5rem solid var(--color-primary);
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+  cursor: progress; }
+  .loading--secondary {
+    border-top: 0.5rem solid var(--color-secondary); }
+  .loading--medium {
+    width: 4rem;
+    height: 4rem; }
+  .loading--small {
+    width: 2.5rem;
+    height: 2.5rem; }
 
 .text-field,
 input[type="email"],
@@ -333,3 +373,15 @@ select {
   textarea::-webkit-input-placeholder,
   select::-webkit-input-placeholder {
     color: var(--color-gray-dark); }
+  .text-field:disabled,
+  input[type="email"]:disabled,
+  input[type="number"]:disabled,
+  input[type="search"]:disabled,
+  input[type="text"]:disabled,
+  input[type="tel"]:disabled,
+  input[type="url"]:disabled,
+  input[type="password"]:disabled,
+  textarea:disabled,
+  select:disabled {
+    background-color: var(--color-gray);
+    cursor: not-allowed; }
