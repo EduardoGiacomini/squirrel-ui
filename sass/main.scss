@@ -1,5 +1,6 @@
 @import "abstracts/variables";
 
+@import "base/animation";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
@@ -7,4 +8,5 @@
 @import "components/avatar";
 @import "components/button";
 @import "components/code";
+@import "components/loading";
 @import "components/text-field";
