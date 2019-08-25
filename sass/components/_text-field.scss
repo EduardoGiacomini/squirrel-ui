@@ -29,4 +29,9 @@ select {
     &::-webkit-input-placeholder {
         color: var(--color-gray-dark);
     }
+
+    &:disabled {
+        background-color: var(--color-gray);
+        cursor: not-allowed;
+    }
 }

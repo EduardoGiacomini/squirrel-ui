@@ -1,0 +1,24 @@
+.loading {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    border: .5rem solid var(--color-gray);
+    border-top: .5rem solid var(--color-primary);
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+    cursor: progress;
+
+    &--secondary {
+        border-top: .5rem solid var(--color-secondary);
+    }
+
+    &--medium {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &--small {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

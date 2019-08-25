@@ -49,6 +49,8 @@
             <button class="round mr-1">Primary</button>
             <button class="bg-secondary mr-1">Secondary</button>
             <button class="bg-secondary round mr-1">Secondary</button>
+            <button class="mr-1"disabled>Disabled</button>
+            <button class="round mr-1" disabled>Disabled</button>
             <div class="mt-2">
                 <pre><code>
 &lt;button>Primary&lt;/button>
@@ -58,6 +60,52 @@
                 </code></pre>
             </div>
         </section>
+    </section>
+    <section class="pa-2">
+        <h2 class="regular">Inputs</h2>
+        <section class="pa-1">
+            <input class="text-field round" type="text" placeholder="Diga algo sobre você" />
+            <input class="text-field" type="text" placeholder="Diga algo sobre você" disabled/>
+            <input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
+            <select>
+                <option value="default">-- Qual sua cor favorita? --</option>
+                <option value="yellow">Amarelo</option>
+                <option value="blue">Azul</option>
+                <option value="red">Vermelho</option>
+                <option value="other">Outra</option>
+            </select>
+            <textarea class="full-width" placeholder="Diga o que lhe faz sorrir …"></textarea>
+            <div class="mt-2">
+                <pre><code>
+&lt;input class="text-field round" type="text" placeholder="Diga algo sobre você" />
+&lt;input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
+&lt;select>
+    &lt;option value="default">-- Qual sua cor favorita? --&lt;/option>
+    &lt;option value="yellow">Amarelo&lt;/option>
+    &lt;option value="blue">Azul&lt;/option>
+    &lt;option value="red">Vermelho&lt;/option>
+    &lt;option value="other">Outra&lt;/option>
+&lt;/select>
+&lt;textarea class="full-width" placeholder="Hi Dave …">&lt;/textarea>
+                    </code></pre>
+            </div>
+        </section>
+    </section>
+    <section class="pa-2">
+        <h2 class="regular">Loading</h2>
+        <section class="pa-1">
+            <div class="loading mr-2"></div>
+            <div class="loading loading--secondary mr-2"></div>
+            <div class="loading loading--medium mr-2"></div>
+            <div class="loading loading--secondary loading--medium mr-2"></div>
+            <div class="loading loading--small mr-2"></div>
+            <div class="loading loading--secondary loading--small mr-2"></div>
+        </section>
+        <div class="mt-2">
+            <pre><code>
+&lt;div class="loading">&lt;/div>
+            </code></pre>
+        </div>
     </section>
     <section class="pa-2">
         <h2 class="regular">Inputs</h2>
