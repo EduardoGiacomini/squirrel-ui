@@ -4,15 +4,17 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    padding: 1.5rem 3rem;
-    box-shadow: var(--shadow-light);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow-medium);
     background-color: var(--color-primary);
     color: var(--color-white);
     text-transform: uppercase;
+    font-family: inherit;
     font-size: 1.4rem;
     font-weight: 700;
     border-radius: var(--border-radius);
     border: none;
+    outline: none;
     transition: all .2s;
 
     cursor: pointer;
@@ -23,6 +25,19 @@ input[type="button"] {
     }
 
     &:active {
+        box-shadow: var(--shadow-medium);
         transform: translateY(-1px);
+    }
+
+    &:disabled {
+        box-shadow: var(--shadow-light);
+        background-color: var(--color-gray);
+        color: var(--color-gray-dark);
+        cursor: not-allowed;
+
+        &:hover {
+            box-shadow: var(--shadow-light);
+            transform: translateY(0);
+        }
     }
 }

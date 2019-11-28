@@ -4,6 +4,7 @@
   "description": "A biblioteca CSS que mais se assemelha a um esquilo",
   "main": "index.js",
   "scripts": {
+    "commit": "npx git-cz",
     "watch:sass": "node-sass sass/main.scss styles/style.css -w",
     "devserver": "live-server",
     "compile:sass": "node-sass sass/main.scss styles/style.comp.css",
@@ -32,9 +33,15 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
+    "cz-conventional-changelog": "^3.0.2",
     "live-server": "^1.2.1",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

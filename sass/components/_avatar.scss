@@ -1,8 +1,8 @@
 .avatar {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 50%;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--shadow-medium);
     transition: all .2s;
 
     &:hover {
@@ -10,12 +10,12 @@
     }
 
     &--small {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     &--big {
-        width: 10rem;
-        height: 10rem;
+        width: 6.5rem;
+        height: 6.5rem;
     }
 }
