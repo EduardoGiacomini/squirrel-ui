@@ -13,12 +13,7 @@
 </head>
 
 <body>
-    <h1 class="center-text bold ma-4">Squirrel UI</h1>
-    <h5 class="center-text light">Ágil, pequeno, leve e arisco. Squirrel-UI é a biblioteca CSS que mais se assemelha com um
-        esquilo.</h5>
-    <button class="center-block">Download</button>
-    <section class="pa-2">
-        <h2 class="regular">Typography</h2>
+    <main class="container">
         <section class="pa-1">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -26,132 +21,81 @@
             <h4>Heading 4</h4>
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam ullam
-                sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus id
-                culpa error.</p>
-            <div>
-                <pre><code>
-&lt;h1>Heading&lt;/h1>
-&lt;h2>Heading&lt;/h2>
-&lt;h3>Heading&lt;/h3>
-&lt;h4>Heading&lt;/h4>
-&lt;h5>Heading&lt;/h5>
-&lt;h6>Heading&lt;/h6>
-&lt;p>Lorem ipsum dolor sit...&lt;/p>
-                </code></pre>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis fugiat tempora totam nemo, quisquam
+                ullam
+                sequi odio natus. Cumque ducimus corporis eius amet exercitationem voluptatem repudiandae possimus
+                id
+                culpa error.
+            </p>
         </section>
-    </section>
-    <section class="pa-2">
-        <h2 class="regular">Buttons</h2>
         <section class="pa-1">
-            <button class="mr-1">Primary</button>
-            <button class="round mr-1">Primary</button>
-            <button class="bg-secondary mr-1">Secondary</button>
-            <button class="bg-secondary round mr-1">Secondary</button>
-            <button class="mr-1"disabled>Disabled</button>
-            <button class="round mr-1" disabled>Disabled</button>
-            <div class="mt-2">
-                <pre><code>
-&lt;button>Primary&lt;/button>
-&lt;button class="round">Primary&lt;/button>
-&lt;button class="bg-secondary">Secondary&lt;/button>
-&lt;button class="bg-secondary round">Secondary&lt;/button>
-                </code></pre>
-            </div>
+            <h2 class="title">Title</h2>
+            <h3 class="subtitle">Subtitle</h3>
+            <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident enim dicta iusto eaque reiciendis ea, recusandae est dignissimos rem, ullam eligendi officiis commodi fugiat, culpa atque nesciunt laboriosam itaque illum?</p>
         </section>
-    </section>
-    <section class="pa-2">
-        <h2 class="regular">Inputs</h2>
         <section class="pa-1">
-            <input class="text-field round" type="text" placeholder="Diga algo sobre você" />
-            <input class="text-field" type="text" placeholder="Diga algo sobre você" disabled/>
-            <input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
-            <select>
-                <option value="default">-- Qual sua cor favorita? --</option>
-                <option value="yellow">Amarelo</option>
-                <option value="blue">Azul</option>
-                <option value="red">Vermelho</option>
-                <option value="other">Outra</option>
-            </select>
-            <textarea class="full-width" placeholder="Diga o que lhe faz sorrir …"></textarea>
-            <div class="mt-2">
-                <pre><code>
-&lt;input class="text-field round" type="text" placeholder="Diga algo sobre você" />
-&lt;input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
-&lt;select>
-    &lt;option value="default">-- Qual sua cor favorita? --&lt;/option>
-    &lt;option value="yellow">Amarelo&lt;/option>
-    &lt;option value="blue">Azul&lt;/option>
-    &lt;option value="red">Vermelho&lt;/option>
-    &lt;option value="other">Outra&lt;/option>
-&lt;/select>
-&lt;textarea class="full-width" placeholder="Hi Dave …">&lt;/textarea>
-                    </code></pre>
-            </div>
+            <section class="center-text pa-1">
+                <button class="button button--primary">Primary</button>
+                <button class="button button-primary" disabled>Primary</button>
+                <button class="button button--secondary">Secondary</button>
+                <button class="button button-secondary" disabled>Secondary</button>
+                
+            </section>
         </section>
-    </section>
-    <section class="pa-2">
-        <h2 class="regular">Loading</h2>
         <section class="pa-1">
-            <div class="loading mr-2"></div>
-            <div class="loading loading--secondary mr-2"></div>
-            <div class="loading loading--medium mr-2"></div>
-            <div class="loading loading--secondary loading--medium mr-2"></div>
-            <div class="loading loading--small mr-2"></div>
-            <div class="loading loading--secondary loading--small mr-2"></div>
+            <section>
+                <div class="input__box">
+                    <label for="name" class="input__label">Name</label>
+                    <input type="text" name="name" class="input__field" id="name" placeholder="Name">
+                </div>
+                <div class="input__box">
+                    <label for="email" class="input__label">E-mail</label>
+                    <input type="email" name="email" class="input__field" id="email" placeholder="E-mail">
+                </div>
+                <div class="input__box">
+                    <label for="password" class="input__label">Password</label>
+                    <input type="password" name="password" class="input__field" id="password" placeholder="Password">
+                </div>
+            </section>
         </section>
-        <div class="mt-2">
-            <pre><code>
-&lt;div class="loading">&lt;/div>
-            </code></pre>
-        </div>
-    </section>
-    <section class="pa-2">
-        <h2 class="regular">Inputs</h2>
-        <section class="pa-1">
-            <p class="bold">Alguma coisa</p>
-            <input class="text-field round" type="text" placeholder="Diga algo sobre você" />
-            <input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
-            <select>
-                <option value="default">-- Qual sua cor favorita? --</option>
-                <option value="yellow">Amarelo</option>
-                <option value="blue">Azul</option>
-                <option value="red">Vermelho</option>
-                <option value="other">Outra</option>
-            </select>
-            <textarea class="full-width" placeholder="Diga o que lhe faz sorrir …"></textarea>
-            <div class="mt-2">
-                <pre><code>
-&lt;input class="text-field round" type="text" placeholder="Diga algo sobre você" />
-&lt;input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
-&lt;select>
-    &lt;option value="default">-- Qual sua cor favorita? --&lt;/option>
-    &lt;option value="yellow">Amarelo&lt;/option>
-    &lt;option value="blue">Azul&lt;/option>
-    &lt;option value="red">Vermelho&lt;/option>
-    &lt;option value="other">Outra&lt;/option>
-&lt;/select>
-&lt;textarea class="full-width" placeholder="Hi Dave …">&lt;/textarea>
-                    </code></pre>
-            </div>
+        <section class="pa-2">
+            <h2 class="regular">Loading</h2>
+            <section class="pa-1">
+                <div class="loading mr-2"></div>
+                <div class="loading loading--secondary mr-2"></div>
+                <div class="loading loading--medium mr-2"></div>
+                <div class="loading loading--secondary loading--medium mr-2"></div>
+                <div class="loading loading--small mr-2"></div>
+                <div class="loading loading--secondary loading--small mr-2"></div>
+            </section>
         </section>
-    </section>
-    <section class="pa-2">
-        <h2 class="regular">Avatar</h2>
-        <section class="pa-1">
-            <img src="https://api.adorable.io/avatars/100/abott@adorable.png" alt="Avatar" class="avatar avatar--big mr-1" />
-            <img src="https://api.adorable.io/avatars/75/abott@adorable.png" alt="Avatar" class="avatar mr-1" />
-            <img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Avatar" class="avatar avatar--small" />
+        <section class="pa-2">
+            <h2 class="regular">Inputs</h2>
+            <section class="pa-1">
+                <p class="bold">Alguma coisa</p>
+                <input class="text-field round" type="text" placeholder="Diga algo sobre você" />
+                <input class="text-field full-width" type="text" placeholder="Diga algo sobre você" />
+                <select>
+                    <option value="default">-- Qual sua cor favorita? --</option>
+                    <option value="yellow">Amarelo</option>
+                    <option value="blue">Azul</option>
+                    <option value="red">Vermelho</option>
+                    <option value="other">Outra</option>
+                </select>
+                <textarea class="full-width" placeholder="Diga o que lhe faz sorrir …"></textarea>
+            </section>
         </section>
-        <div class="mt-2">
-            <pre><code>
-&lt;img src="https://api.adorable.io/avatars/100/abott@adorable.png" alt="Avatar" class="avatar avatar--big" />
-&lt;img src="https://api.adorable.io/avatars/75/abott@adorable.png" alt="Avatar" class="avatar" />
-&lt;img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Avatar" class="avatar avatar--small" />
-                        </code></pre>
-        </div>
-    </section>
+        <section class="pa-2">
+            <h2 class="regular">Avatar</h2>
+            <section class="pa-1">
+                <img src="https://api.adorable.io/avatars/100/abott@adorable.png" alt="Avatar"
+                    class="avatar avatar--big mr-1" />
+                <img src="https://api.adorable.io/avatars/75/abott@adorable.png" alt="Avatar" class="avatar mr-1" />
+                <img src="https://api.adorable.io/avatars/50/abott@adorable.png" alt="Avatar"
+                    class="avatar avatar--small" />
+            </section>
+        </section>
+    </main>
 </body>
 
 </html>
