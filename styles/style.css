@@ -14,8 +14,8 @@
   --color-grey-dark: #333333;
   --color-white: #F8F8F8;
   --color-black: #121418;
-  --shadow-light: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
-  --shadow-medium:  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --shadow-light: 0 2px 8px rgba(0,0,0,0.07), 0 2px 8px rgba(0,0,0,0.07);
+  --shadow-medium:  0 3px 12px rgba(0,0,0,0.1), 0 3px 12px rgba(0,0,0,0.1);
   --shadow-dark: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   --border-radius: 6px; }
 
@@ -41,11 +41,15 @@ body {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  color: var(--color-grey-dark); }
+  color: var(--color-black); }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
-  color: var(--color-grey-dark); }
+  color: var(--color-black);
+  opacity: .9; }
+
+p, span, label {
+  opacity: .9; }
 
 h1 {
   font-size: 5.6rem;
@@ -268,16 +272,19 @@ p {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
-  box-shadow: var(--shadow-medium);
   transition: all .2s; }
-  .avatar:hover {
-    box-shadow: var(--shadow-dark); }
   .avatar--small {
     width: 4rem;
     height: 4rem; }
   .avatar--big {
     width: 6.5rem;
     height: 6.5rem; }
+
+.box {
+  padding: 2rem;
+  border: 1px solid var(--color-grey-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light); }
 
 .button {
   display: inline-block;
@@ -325,21 +332,6 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre; }
 
-.loading {
-  display: inline-block;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  animation: loading 1s linear infinite; }
-  .loading--secondary {
-    border-top: 0.5rem solid var(--color-secondary); }
-  .loading--medium {
-    width: 4rem;
-    height: 4rem; }
-  .loading--small {
-    width: 2.5rem;
-    height: 2.5rem; }
-
 .input__box {
   display: block;
   margin-bottom: 2rem; }
@@ -372,3 +364,20 @@ pre > code {
     background-color: var(--color-grey);
     border: 2px solid var(--color-grey);
     cursor: not-allowed; }
+
+.loading {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  border: 0.5rem solid var(--color-grey);
+  border-top: 0.5rem solid var(--color-primary);
+  border-radius: 50%;
+  animation: loading 1.5s linear infinite; }
+  .loading--secondary {
+    border-top: 0.5rem solid var(--color-secondary); }
+  .loading--medium {
+    width: 4rem;
+    height: 4rem; }
+  .loading--small {
+    width: 2.5rem;
+    height: 2.5rem; }

@@ -2,12 +2,7 @@
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
-    box-shadow: var(--shadow-medium);
     transition: all .2s;
-
-    &:hover {
-        box-shadow: var(--shadow-dark);
-    }
 
     &--small {
         width: 4rem;
