@@ -3,6 +3,9 @@
 .regular { font-weight: 400 !important; }
 .light { font-weight: 300 !important; }
 
+// Boxes
+.container { max-width: 100rem; margin: 0 auto; padding: 2rem; }
+
 // Paddings
 .pa-1 { padding: 1rem !important; }
 .pa-2 { padding: 2rem !important; }
@@ -60,7 +63,6 @@
 .bg-secondary { background-color: var(--color-secondary) !important; }
 
 // Abstracts
-.round { border-radius: 5rem !important; }
 .full-width { width: 100% !important; box-sizing: border-box !important; }
 .center-text { text-align: center !important; }
 .center-block { display: block !important; margin: 0 auto !important; }
